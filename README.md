@@ -4,7 +4,7 @@
 
 This guide provides an overview of how to apply
 [dropout](https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)
-using `flax.linen.Dropout`
+using `flax.linen.Dropout`.
 
 Dropout is a stochastic regularization technique that randomly removes
 hidden and visible units in a network.
@@ -40,7 +40,7 @@ main_key, params_key, dropout_key = jax.random.split(key=root_key, num=3)
 can use them later in your `flax.linen.Module`{.interpreted-text
 role="meth"}. For example, you pass the stream `'params'` for
 initializing parameters, and `'dropout'` for applying
-`flax.linen.Dropout`
+`flax.linen.Dropout`.
 
 ## Define your model with `Dropout`
 
